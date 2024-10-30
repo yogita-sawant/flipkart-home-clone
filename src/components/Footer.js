@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer className="bg-[#292626] text-gray-400">
             <div className="container">
-                <div className="grid grid-cols-1 md:grid-cols-6 gap-1 pt-[40px] pl-[60px]">
+                <div className="grid grid-cols-1 md:grid-cols-6 gap-1 pt-[20px] pl-[60px] mb-4">
                     <div className='p-4'>
                         <h2 className="font-normal mb-2 text-left text-[#878787] text-[12px]">ABOUT</h2>
                         <ul className="text-left">
@@ -45,11 +45,11 @@ const Footer = () => {
                             <li><a href="#" className="font-semibold text-white text-[12px]">Grievance Redressal</a></li>
                             <li><a href="#" className="font-semibold text-white text-[12px]">EPR Compliance</a></li>
                         </ul>
-                    </div>
 
-                    <div className='p-4'>
+                    </div>
+                    <div className='p-4 border-l border-gray-700 pl-8 pr-8'>
                         <h2 className="font-normal mb-2 text-left text-[#878787] text-[12px]">Mail Us:</h2>
-                        <p className="text-white text-left font-semibold text-white text-[12px]">
+                        <p className="text-white text-left font-semibold text-[12px]">
                             Flipkart Internet Private Limited,<br />
                             Buildings Alyssa, Begonia &<br />
                             Clove Embassy Tech Village,<br />
@@ -57,9 +57,24 @@ const Footer = () => {
                             Bengaluru, 560103,<br />
                             Karnataka, India
                         </p>
+                        <div className="mt-4">
+                            <h3 className="text-[#878787] text-[12px]">Social:</h3>
+                            <div className="grid grid-cols-5 mt-2">
+                                <a href="#" aria-label="Facebook" className="flex justify-center">
+                                    <img src="/images/footer/social1.svg" alt="Facebook" className="w-6 h-6" />
+                                </a>
+                                <a href="#" aria-label="Twitter" className="flex justify-center">
+                                    <img src="/images/footer/social2.svg" alt="Twitter" className="w-6 h-6" />
+                                </a>
+                                <a href="#" aria-label="Instagram" className="flex justify-center">
+                                    <img src="/images/footer/social3.svg" alt="Instagram" className="w-6 h-6" />
+                                </a>
+                            </div>
+                        </div>
                     </div>
 
-                    <div className='p-4'>
+
+                    <div className='pt-4'>
                         <h2 className="font-normal mb-2 text-left text-[#878787] text-[12px]">Registered Office Address:</h2>
                         <p className="text-white font-semibold text-white text-[12px] text-left">
                             Flipkart Internet Private Limited,<br />
@@ -69,7 +84,7 @@ const Footer = () => {
                             Bengaluru, 560103,<br />
                             Karnataka, India<br />
                             CIN: U51109KA2012PTC066107<br />
-                            Telephone: 044-45614700 / 044-67415800
+                            Telephone: <span className='text-[#2874f0]'>044-45614700</span> / <span className='text-[#2874f0]'>044-67415800</span>
                         </p>
                     </div>
                 </div>
